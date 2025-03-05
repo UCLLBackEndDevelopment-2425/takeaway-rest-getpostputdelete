@@ -22,11 +22,12 @@ public class Controller {
     @GetMapping("/{price}")
     public List<Pizza> getPizza(@PathVariable double price) {
         List<Pizza> pizzasWithPrice = new ArrayList<>();
-        for (Pizza pizza:pizzas) {
-            if(pizza.price==price)
+        for (Pizza pizza : pizzas) {
+            if (pizza.price == price) {
                 pizzasWithPrice.add(pizza);
+            }
         }
+
         return pizzasWithPrice;
     }
-
 }

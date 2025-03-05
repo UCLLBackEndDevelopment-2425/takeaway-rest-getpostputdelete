@@ -2,7 +2,7 @@
 
 We want to be able to update the price of a specific pizza.
 * Which method should you use for this end-point? Why?
-* Implement this end-point
+* Implement this endpoint
   * the url should be http://localhost:8080/pizza/{name}/{price}
     * name is the name of the pizza you want to update 
     * price is the new price for the found pizza
