@@ -2,12 +2,12 @@
 
 Run the given code
 - What happens?
-- Try the GET end-point http://localhost:8080/pizzas in Postman
+- Try the GET end-point http://localhost:8080/pizza in Postman
 - What is going wrong?
 
 Refactor the code so that 
 - Spring Boot starts up correctly
-- The GET end-point: http://localhost:8080/pizzas returns the following json when trying it in Postman 
+- The GET end-point: http://localhost:8080/pizza returns the following json when trying it in Postman 
 ```javascript
 [
   {
