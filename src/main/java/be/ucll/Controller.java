@@ -13,8 +13,8 @@ public class Controller {
 
     public Controller() {
         pizzas.add(new Pizza("Margherita", 10.00));
-        Ingredrient mozzarella = new Ingredrient("Cheese", "Mozzarella");
-        Ingredrient nachos = new Ingredrient("Vegtable", "Nachos");
+        Ingredient mozzarella = new Ingredient("Cheese", "Mozzarella");
+        Ingredient nachos = new Ingredient("Vegtable", "Nachos");
     }
 
     @GetMapping

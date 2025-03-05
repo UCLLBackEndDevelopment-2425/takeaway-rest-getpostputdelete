@@ -1,11 +1,11 @@
 package be.ucll;
 
-public class Ingredrient {
+public class Ingredient {
 
     private String category;
     private String name;
 
-    public Ingredrient(String category, String name) {
+    public Ingredient(String category, String name) {
         this.category = category;
         this.name = name;
     }
