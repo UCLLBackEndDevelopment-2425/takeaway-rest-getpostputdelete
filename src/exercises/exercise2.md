@@ -1,9 +1,11 @@
-# Exercise 1
+# Exercise 2
 
 Try the GET end-point http://localhost:8080/pizza in Postman
-* What is going wrong?
+* You get a 404. What does a 404 HTTP status code mean?
 
-Refactor the code so that the GET end-point: http://localhost:8080/pizza returns the following JSON:
+Refactor the code so that the GET end-point: http://localhost:8080/pizza returns 
+- a 200 HTTP status code 
+- and the following JSON in the body of the response
 ```javascript
 [
   {

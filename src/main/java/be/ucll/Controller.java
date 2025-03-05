@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pizza")
 public class Controller {
 
     public List<Pizza> pizzas = new ArrayList<>();
@@ -16,7 +15,7 @@ public class Controller {
     public Controller() {
         pizzas.add(new Pizza("Margherita", 10.00));
         Ingredient mozzarella = new Ingredient("Cheese", "Mozzarella");
-        Ingredient nachos = new Ingredient("Vegtable", "Nachos");
+        Ingredient nachos = new Ingredient("Vegetable", "Nachos");
     }
 
     @GetMapping
