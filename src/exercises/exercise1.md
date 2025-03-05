@@ -1,23 +1,9 @@
 # Exercise 1
 
-Run the given code
-- What happens?
-- Try the GET end-point http://localhost:8080/pizza in Postman
-- What is going wrong?
+Take a look at the provided classes:
+  * Pizza
+    * The fields of this class are currently public. Right now, are there any advantages to making these fields private? What would trigger you to make these fields private and write getters and setters for them?
+  * TakeAwayApplication/pom.xml
+    * What are the three things a java-project needs to start a Spring powered back-end? Are all three currently present?
 
-Refactor the code so that 
-- Spring Boot starts up correctly
-- The GET end-point: http://localhost:8080/pizza returns the following json when trying it in Postman 
-```javascript
-[
-  {
-    "name":"Margherita",
-    "price":10.0,
-    "veggie":false
-  },
-  {
-    "name":"Napolitana",
-    "price":12.5,
-    "veggie":false
-  }
-]
+Change the code so that the application starts a back-end.
