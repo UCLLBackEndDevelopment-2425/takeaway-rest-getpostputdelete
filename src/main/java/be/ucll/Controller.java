@@ -1,8 +1,6 @@
 package be.ucll;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,12 +12,21 @@ public class Controller {
 
     public Controller() {
         pizzas.add(new Pizza("Margherita", 10.00));
-        Ingredient mozzarella = new Ingredient("Cheese", "Mozzarella");
-        Ingredient nachos = new Ingredient("Vegetable", "Nachos");
     }
 
     @GetMapping
     public List<Pizza> getPizzas () {
         return pizzas;
     }
+
+    @GetMapping("/{price}")
+    public List<Pizza> getPizza(@PathVariable double price) {
+        List<Pizza> pizzasWithPrice = new ArrayList<>();
+        for (Pizza pizza:pizzas) {
+            if(pizza.price==price)
+                pizzasWithPrice.add(pizza);
+        }
+        return pizzasWithPrice;
+    }
+
 }
