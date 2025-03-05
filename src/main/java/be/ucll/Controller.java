@@ -13,7 +13,6 @@ public class Controller {
 
     public Controller() {
         pizzas.add(new Pizza("Margherita", 10.00));
-        pizzas.add(new Pizza("Napolitana", 12.50));
         Ingredrient mozzarella = new Ingredrient("Cheese", "Mozzarella");
         Ingredrient nachos = new Ingredrient("Vegtable", "Nachos");
     }

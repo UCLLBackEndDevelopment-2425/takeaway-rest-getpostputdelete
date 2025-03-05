@@ -2,6 +2,7 @@
 
 Run the given code
 - What happens?
+- Try the GET end-point http://localhost:8080/pizzas in Postman
 - What is going wrong?
 
 Refactor the code so that 
